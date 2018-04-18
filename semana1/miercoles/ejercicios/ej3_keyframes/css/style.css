@@ -41,7 +41,7 @@ div{
 }
 
 
-.rectangulo{
+/*.rectangulo{
 	width: 100px;
 	height: 80px;
 	background-color: green;
@@ -49,7 +49,88 @@ div{
 	position: relative;
 
 }
+*/
 
-@keyframes .rectangulo{
-	
+.triangulo{
+	height: 0;
+	width: 0; /*en sí es un rectangulo que se divide en tres, los primeros dos son los otros lados*/
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid red;
+
+	animation-name: triangulo;
+	animation-duration: 5s
+}
+
+@keyframes triangulo{
+	0%{border-left: 50px solid transparent,
+		border-right: 50px solid transparent,
+		border-bottom: 50px solid red,
+		left: 0px,
+		top: 0px;
+		}
+	25%{border-left: 50px solid transparent,
+		border-right: 50px solid transparent,
+		border-bottom: 50px solid blue,
+		left: 25px,
+		 top: 30px;}
+	50%{border-left: 50px solid transparent,
+		border-right: 50px solid transparent,
+		border-bottom: 50px solid gold,
+		left: 53px,
+		 top: 65px;}
+	75%{border-left: 50px solid transparent,
+		border-right: 50px solid transparent,
+		border-bottom: 50px solid purple,
+		left: 65px,
+		 top: 100px;}
+	100%{border-left: 50px solid transparent,
+		border-right: 50px solid transparent,
+		border-bottom: 50px solid red,
+		left: 65px,
+		 top: 100px;}
+		
+
+}
+
+.circulo{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: white; 
+
+	animation: circulo 1s linear 0s infinite;
+}
+
+@keyframes circulo{
+	from{
+		box-shadow: 100px 0 0 0 white,
+					300px 0 0 0 white,
+					500px 0 0 0 red,
+					700px 0 0 0 white,
+					900px 0 0 0 white,
+					1100px 0 0 0 white,
+					1300px 0 0 0 white;
+		}
+	to{
+		box-shadow: 100px 0 0 0 white
+					300px 0 0 0 white
+					500px 0 0 0 white
+					700px 0 0 0 red
+					900px 0 0 0 white
+					1100px 0 0 0 white
+					1300px 0 0 0 white;
+
+	}
+}
+
+.pacman{
+	margin: 50px 10px;
+}
+
+.pacman{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px;
 }
