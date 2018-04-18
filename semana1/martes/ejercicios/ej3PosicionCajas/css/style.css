@@ -1,0 +1,23 @@
+div{
+	color: white;
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	font-size: 30px;
+	margin: 5px;
+
+}
+
+.cajaPapi{
+	width: 500px;
+	height: 500px;
+	background: black;
+
+	position: relative;
+	/*position: absolute;*/
+}
+
+.cajaHija{
+	/*position: static;*/
+	position: fixed;
+}
