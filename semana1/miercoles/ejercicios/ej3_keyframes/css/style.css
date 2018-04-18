@@ -1,0 +1,55 @@
+body{
+	background: #55FFA2FF;
+}
+
+h1{
+	color: black;
+	text-align: center;
+}
+
+
+h2{
+	color: black;
+	text-align: center;	
+}
+
+
+h3{
+	color: white;
+	text-align: center;
+}
+
+div{
+	margin: auto;
+}
+
+/*..................*/
+.cuadrado{
+	width: 50px;
+	height: 50px;
+	background: red;
+
+	animation-name: cuadrado;
+	animation-duration: 10s;
+}
+/*Elemento que aplicará animación al selector*/
+@keyframes cuadrado{
+	0%{background-color: red;}
+	25%{background-color: yellow;}
+	50%{background-color: blue;}
+	100%{background-color: black;}
+}
+
+
+.rectangulo{
+	width: 100px;
+	height: 80px;
+	background-color: green;
+
+	position: relative;
+
+}
+
+@keyframes .rectangulo{
+	
+}
