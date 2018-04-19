@@ -1,0 +1,28 @@
+body {
+	background: #B5E2FFFF;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+}
+
+
+div {
+	margin: auto;
+}
+
+.rectangulo{
+	width: 150px;
+	height: 75px;
+	background-color: red;
+	transition-duration: 10s;
+	transition-timing-function: linear;
+	transition-delay: 5s;
+}
+
+
+.rectangulo:hover{
+	width: 300px;
+}
+
